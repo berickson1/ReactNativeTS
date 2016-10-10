@@ -7,11 +7,13 @@
     "android": "adb reverse tcp:8081 tcp:8081 && node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "prebuild": "rm -rf build",
-    "build": "tsickle"
+    "build": "tsickle",
+    "buildts": "tsc"
   },
   "dependencies": {
     "@types/react": "^0.14.37",
     "@types/react-native": "^0.29.34",
+    "@types/whatwg-fetch": "0.0.31",
     "react": "^15.3.2",
     "react-native": "^0.34.0",
     "react-native-button": "^1.7.0",

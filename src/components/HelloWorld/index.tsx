@@ -21,6 +21,10 @@ export default class HelloWorld extends Component<Props, State> {
         alert: "Hello world!",
     };
 
+    componentDidMount() {
+        fetch('http://example.com');
+    }
+
     state = {
         counter: 0,
     };
